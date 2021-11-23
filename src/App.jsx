@@ -62,24 +62,25 @@ function App() {
 					</ContainerProfile>
 
 					<ContainerRepos>
-						//If DataApiRepos is not empty, show the repos of the
-						user
-						{dataApiRepos !== null &&
-							dataApiRepos.map((repo, index) => (
-								<Repo key={index}>
-									<h4>{repo.name}</h4>
-									<Icons>
-										<span>
-											<i className="fas fa-star"> </i>{" "}
-											{repo.stargazers_count}
-										</span>
-										<span>
-											<i className="fas fa-code-branch"></i>
-											{repo.forks}
-										</span>
-									</Icons>
-								</Repo>
-							))}
+						{
+							//If DataApiRepos is not empty, show the repos of the user
+							dataApiRepos !== null &&
+								dataApiRepos.map((repo, index) => (
+									<Repo key={index}>
+										<h4>{repo.name}</h4>
+										<Icons>
+											<span>
+												<i className="fas fa-star"> </i>{" "}
+												{repo.stargazers_count}
+											</span>
+											<span>
+												<i className="fas fa-code-branch"></i>
+												{repo.forks}
+											</span>
+										</Icons>
+									</Repo>
+								))
+						}
 					</ContainerRepos>
 				</>
 			)}
