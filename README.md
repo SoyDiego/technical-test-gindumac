@@ -30,4 +30,4 @@ http://localhost:5000/
 -   Emotion (Style Components)
 -   ExpressJS
 
-![Screenshot](https://i.imgur.com/UwgpETg.png)
+![Screenshot](https://i.imgur.com/gf16qLj.png)
